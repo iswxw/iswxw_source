@@ -30,7 +30,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md ## 禁止将README转换为HTML
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -105,7 +105,9 @@ theme: yilia-plus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@gitee.com:iswxw/iswxw.git
+  repository: git@gitee.com:iswxw/iswxw.git
+  email: 1550518923@qq.com
+  name: weixiaowei
   branch: master
   message: update_blog
 
