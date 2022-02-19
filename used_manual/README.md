@@ -1,0 +1,16 @@
+### 使用手册
+
+#### Hexo 使用
+
+常用命令
+
+```bash
+npm install hexo-cli -g                                        // 安装hexo
+hexo init iswxw                                                // 初始化博客目录： 
+cd iswxw                                                       // 初始化完成后，我们就进入我们的目录
+npm install                                                    // 安装 依赖包
+hexo clean                                                     // 清除缓存文件 (db.json) 和已生成的静态文件 (public)
+hexo g                                                         // 生成静态页面 
+hexo s                                                         // 把你的网站本地运行起来
+```
+
