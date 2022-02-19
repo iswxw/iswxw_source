@@ -12,5 +12,6 @@ npm install                                                    // 安装 依赖�
 hexo clean                                                     // 清除缓存文件 (db.json) 和已生成的静态文件 (public)
 hexo g                                                         // 生成静态页面 
 hexo s                                                         // 把你的网站本地运行起来
+hexo d                                                         // 发布服务到指定的服务器
 ```
 
