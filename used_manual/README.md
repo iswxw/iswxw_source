@@ -15,3 +15,15 @@ hexo s                                                         // 把你的网�
 hexo d                                                         // 发布服务到指定的服务器
 ```
 
+#### 项目维护
+
+```json
+# push 到指定仓库
+git push git@github.com:iswxw/iswxw_source.git main
+
+# 发布 到码云 https://gitee.com/iswxw/iswxw.git
+hexo d 
+```
+
+
+
