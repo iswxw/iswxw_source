@@ -17,13 +17,31 @@ hexo d                                                         // 发布服务�
 
 #### 项目维护
 
-```json
-# push 到指定仓库
-git push git@github.com:iswxw/iswxw_source.git main
+##### 项目预览
 
-# 发布 到码云 https://gitee.com/iswxw/iswxw.git
-hexo d 
+```bash
+# 1. 请求历史文件
+hexo clean
+
+# 2. 生成静态页面
+hexo g
+
+# 3. 发布本地服务
+hexo s
 ```
 
+##### 项目发布
 
+```bash
+# 1. 请求历史文件
+hexo clean
 
+# 2. 生成静态页面
+hexo g
+
+# 3. 发布 到码云 https://gitee.com/iswxw/iswxw.git
+hexo d 
+
+# 4. push 到指定仓库
+git push git@github.com:iswxw/iswxw_source.git main
+```
