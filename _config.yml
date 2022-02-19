@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 小伟
+# subtitle: ''
+description: 小伟_技术博客
+keywords: Java半颗糖,小伟博客,半颗糖_技术博客,小伟
+author: 小伟
+language: zh-Hans
+timezone: Asia/Shanghai
 
+# 配置博客路径
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://iswxw.gitee.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -99,7 +101,44 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: yilia-plus
 
-# Deployment
+# Deployment 将 Hexo 与 仓库建立联系
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@gitee.com:iswxw/iswxw.git
+  branch: master
+  message: update_blog
+
+jsonContent:
+  file: content.json
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: true
+    link: true
+    permalink: true
+    excerpt: false
+    categories: true
+    tags: true
+
+# Extensions
+plugins: hexo-generator-feed
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# https://github.com/JoeyBling/hexo-filter-image
+filter_image:
+  # 日志是否启用
+  log: true

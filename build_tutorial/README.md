@@ -26,5 +26,66 @@
 npm install -g hexo-cli
 ```
 
+### 3. 配置
+
+#### 3.1 主题配置
+
+一个主题可能会有以下的结构：
+
+```json
+.
+├── _config.yml // 主题的配置文件。和 Hexo 配置文件不同，主题配置文件修改时会自动更新，无需重启 Hexo Server
+├── languages   // 语言文件夹。请参见 国际化 (i18n)。
+├── layout      // 布局文件夹。用于存放主题的模板文件，决定了网站内容的呈现方式，
+├── scripts     // 脚本文件夹。在启动时，Hexo 会载入此文件夹内的 JavaScript 文件
+└── source      // 资源文件夹，除了模板以外的 Asset，例如 CSS、JavaScript 文件等，都应该放在这个文件夹中。
+                // 文件或文件夹开头名称为 _（下划线线）或隐藏的文件会被忽略。
+```
+
+相关资料
+
+1. https://hexo.io/zh-cn/docs/themes
+
+>  **选择主题** 
+
+https://github.com/JoeyBling/hexo-theme-yilia-plus
+
+ 一个简洁优雅的hexo主题 A simple and elegant theme for hexo.
+
+#### 3.2 目录模板
+
+模板决定了网站内容的呈现方式，每个主题至少都应包含一个 `index` 模板，以下是各页面相对应的模板名称：
+
+| 模板       | 用途     | 回退      |
+| :--------- | :------- | :-------- |
+| `index`    | 首页     |           |
+| `post`     | 文章     | `index`   |
+| `page`     | 分页     | `index`   |
+| `archive`  | 归档     | `index`   |
+| `category` | 分类归档 | `archive` |
+| `tag`      | 标签归档 | `archive` |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
